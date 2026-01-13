@@ -505,7 +505,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7a4de513b22914aae50e5df8bcf07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitManager
-  fruitPrefab: {fileID: 4880770250373603447, guid: d7abf8fdd5b78be47935c9ed5bcdce9e, type: 3}
+  fruitPrefabs:
+  - {fileID: 4880770250373603447, guid: d7abf8fdd5b78be47935c9ed5bcdce9e, type: 3}
+  - {fileID: 4880770250373603447, guid: 3adb50b3eaac72943b8ddf41e6836df3, type: 3}
+  - {fileID: 4880770250373603447, guid: ff0590feb550e2c409bab949fc03c449, type: 3}
   fruitDropLine: {fileID: 735755564}
   fruitSpawnLine: {fileID: 135119417}
   enableGizmos: 1
