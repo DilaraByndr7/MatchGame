@@ -510,8 +510,7 @@ MonoBehaviour:
   - {fileID: 4880770250373603447, guid: d7abf8fdd5b78be47935c9ed5bcdce9e, type: 3}
   - {fileID: 4880770250373603447, guid: 3adb50b3eaac72943b8ddf41e6836df3, type: 3}
   - {fileID: 4880770250373603447, guid: ff0590feb550e2c409bab949fc03c449, type: 3}
-  spawnableFruit:
-  - {fileID: 4880770250373603447, guid: d7abf8fdd5b78be47935c9ed5bcdce9e, type: 3}
+  - {fileID: 4880770250373603447, guid: 205bf3f6fde93ad46930e0cf21fceaf5, type: 3}
   fruitsParent: {fileID: 1260031798}
   fruitDropLine: {fileID: 735755564}
   fruitSpawnLine: {fileID: 135119417}

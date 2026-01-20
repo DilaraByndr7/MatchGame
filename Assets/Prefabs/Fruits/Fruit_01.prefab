@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4880770250373603447}
   - component: {fileID: 4159040771032264194}
   m_Layer: 0
-  m_Name: Fruit 2
+  m_Name: Fruit_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 590244630535353212}
   m_Father: {fileID: 0}
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e675cc5dfc1392d4abcd839469b6c8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  fruitType: 1
 --- !u!95 &4159040771032264194
 Animator:
   serializedVersion: 7
@@ -215,7 +216,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.93962264, g: 0.88726395, b: 0.52299744, a: 1}
+  m_Color: {r: 0.9622642, g: 0.6820162, b: 0.3903524, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
