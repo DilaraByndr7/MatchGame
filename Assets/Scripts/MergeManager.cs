@@ -14,17 +14,19 @@ public class MergeManager : MonoBehaviour
     //Fruit lastSender;
 
 
-    void Start()
+    void Awake()
     {
         Fruit.onCollisionWithFruit += CollisionBetweenFruitsCallback;
     }
 
-    private void OnDestroy()  //added
+    private void OnDestroy()  
     {
         Fruit.onCollisionWithFruit -= CollisionBetweenFruitsCallback;
     }
-   
-
+    void Start()
+    {
+        
+    }
     void Update()
     {
 

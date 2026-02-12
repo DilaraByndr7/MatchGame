@@ -6,5 +6,17 @@ public enum FruitType
     Blueberry,
     Cherry,
     Plum,
-    Peach
+    Kiwi,
+    Peach,
+    Orange,
+    Melon,
+    Coconut,
+    Watermelon
+}
+
+public enum GameState 
+{
+    Menu,
+    Game,
+    Gameover
 }
