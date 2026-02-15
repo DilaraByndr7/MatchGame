@@ -97,7 +97,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4880770250373603447
 MonoBehaviour:
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
   spriteRenderer: {fileID: 3465699936648871494}
   fruitType: 7
+  mergeParticles: {fileID: 0}
 --- !u!95 &4159040771032264194
 Animator:
   serializedVersion: 7
@@ -214,7 +215,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6838937624156591441, guid: 98143aeff17761f4b8a556a2eec8657a, type: 3}
   m_Color: {r: 0.4490565, g: 0.34217715, b: 0.2906158, a: 1}

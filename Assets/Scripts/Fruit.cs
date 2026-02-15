@@ -17,6 +17,9 @@ public class Fruit : MonoBehaviour
 
     //private bool canMerge = true;
 
+    [Header("Effects")]
+    [SerializeField] private ParticleSystem mergeParticles;
+
     void Start()
     {
         Invoke("AllowMerge", .25f);
@@ -86,6 +89,18 @@ public class Fruit : MonoBehaviour
 
             onCollisionWithFruit?.Invoke(this, otherFruit);
         }
+    }
+
+    public void Merge()
+    {
+        if(mergeParticles != null)
+        {
+            mergeParticles.transform.SetParent(null);
+            mergeParticles.Play();
+        }
+
+
+        Destroy(gameObject);
     }
     public FruitType GetFruitType()
     {
