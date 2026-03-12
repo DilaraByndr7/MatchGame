@@ -8,10 +8,12 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         MergeManager.onMergeProcessed += MergeProcessedCallback;
+        SettingsManager.onSFXValueChanged += SFXValueChangedCallback;
     }
     private void OnDestroy()
     {
         MergeManager.onMergeProcessed -= MergeProcessedCallback;
+        SettingsManager.onSFXValueChanged -= SFXValueChangedCallback;
     }
     private void MergeProcessedCallback(FruitType fruitType, Vector2 mergePos)
     {
@@ -21,6 +23,11 @@ public class AudioManager : MonoBehaviour
     {
         mergeSource.pitch = Random.Range(.9f, 1.1f);
         mergeSource.Play();
+    }
+
+    private void SFXValueChangedCallback(bool sfxActive)
+    {
+        mergeSource.mute = !sfxActive;
     }
 
 

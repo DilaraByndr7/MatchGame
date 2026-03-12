@@ -95,7 +95,7 @@ public class GameOverManager : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.LogError("GameOver");
+        //Debug.LogError("GameOver");
         isGameover = true;
 
         GameManager.instance.SetGameoverState();
